@@ -83,17 +83,24 @@
             <a class="mx-auto text-2xl font-bold" href="#">YALA STYLE</a>
             <ul class="hidden lg:flex grow justify-center">
                 <li class="px-3" ><a href="#">Trang chủ</a></li>
-                <li class="px-3" ><a href="#">Header</a></li>
+                <div class="flex items-center justify-center">
+                    <li class="px-3" ><a href="#">Header</a>
+                    </li><ion-icon class="w-[11px] h-[11px] " name="chevron-down-outline"></ion-icon>
+                </div>
                 <li class="px-3" ><a href="#">Sản phẩm</a></li>
-                <li class="px-3" ><a href="#">Product Views</a></li>
+                <div class="flex items-center justify-center">
+                
+                    <li class="px-3" ><a href="#">Product Views</a></li>
+                    <ion-icon class="w-[11px] h-[11px]" name="chevron-down-outline"></ion-icon>
+                </div>
                 <li class="px-3" ><a href="#">Blog</a></li>
-                <li class="px-3" ><a href="#">Giới thiệu liên hệ</a></li>
-              
+                <li class="px-3" ><a href="#">Giới thiệu</a></li>
+                <li class="px-3" ><a href="#">Liên hệ</a></li>
             </ul>
             <div >  
-                <ion-icon class="hidden md:inline-block w-6 h-10 ml-2 " name="search-outline"></ion-icon>
-                <ion-icon class="w-7 h-11 md:w-6 md:h-10 p-1 md:ml-2" name="person-outline"></ion-icon>
-                <ion-icon class="w-7 h-11 md:w-6 md:h-10 p-1 md:ml-2" name="cart-outline"></ion-icon>
+                <ion-icon class="text-gray-600 hidden md:inline-block w-6 h-12 ml-2 " name="search-outline"></ion-icon>
+                <ion-icon class="text-gray-600  w-7 h-11 md:w-6 md:h-10 p-1 md:ml-2" name="person-outline"></ion-icon>
+                <ion-icon class="text-gray-600  w-7 h-11 md:w-6 md:h-10 p-1 md:ml-2" name="cart-outline"></ion-icon>
             </div>
         </div>
     </div>
@@ -163,7 +170,7 @@
     <!-- Collection girl -->
     <div class=" lg:max-w-[1140px] mb-16 lg:flex mx-auto items-center justify-center gap-6 ">
         <!-- col-left-collection-girl -->
-        <div class="px-[15px] py-[15px] sm:px-10 lg:px-0 lg:w-2/4 mb-auto">
+        <div class="px-[15px] py-[15px] lg:py-0 sm:px-10 lg:px-0 lg:w-2/4 mb-auto">
             <div class="h-auto">
                 <img src="https://theme.hstatic.net/200000301562/1000687964/14/home_collection_1_banner.jpg?v=3264"
                 alt=""
@@ -298,7 +305,7 @@
 
         </div>
         <!-- col-right-collection-man -->
-        <div class="order-1 lg:order-2 px-[15px] py-[15px] sm:px-10 lg:px-0 lg:w-2/4 mb-auto">
+        <div class="order-1 lg:order-2 px-[15px] py-[15px] lg:py-0 sm:px-10 lg:px-0 lg:w-2/4 mb-auto">
             <div class="h-auto">
                 <img src="https://theme.hstatic.net/200000301562/1000687964/14/home_collection_2_banner.jpg?v=3264"
                 alt=""
@@ -475,19 +482,19 @@
     <!-- Info delivery -->
     <div class="bg-gray-100 mb-16 ">
         <div class="grid lg:grid-cols-3 lg:max-w-[1140px] mx-auto h-[800px] lg:h-60">
-            <div class="border-b-2 my-8 flex flex-col items-center">
+            <div class="border-b-2 lg:border-0  my-8 flex flex-col items-center">
                 <ion-icon class="w-14 h-14" name="airplane-outline"></ion-icon>
                 <p class="font-bold text-lg my-2">Sản phẩm chính hiệu</p>
                 <p class="my-2">Chất lượng thật - Giá trị thật</p>
                 <p class="my-2 font-bold">Xem chi tiết ></p>
             </div>
-            <div class=" border-b-2 my-8 flex flex-col items-center">
+            <div class=" border-b-2 lg:border-0 my-8 flex flex-col items-center">
                 <ion-icon class="w-14 h-14" name="card-outline"></ion-icon>
                 <p class="font-bold text-lg my-2">Sản phẩm chính hiệu</p>
                 <p class="my-2">Chất lượng thật - Giá trị thật</p>
                 <p class="my-2 font-bold">Xem chi tiết ></p>
             </div>
-            <div class="my-8 border-b-2  flex flex-col items-center">
+            <div class="my-8 border-b-2 lg:border-0  flex flex-col items-center">
                 <ion-icon class="w-14 h-14" name="speedometer-outline"></ion-icon>
                 <p class="font-bold text-lg my-2">Sản phẩm chính hiệu</p>
                 <p class="my-2">Chất lượng thật - Giá trị thật</p>
@@ -599,77 +606,169 @@
              class="w-full h-full object-cover">
         </div>
    </div>  
+   <!-- Button Footer -->
+   <div class="flex flex-col py-[10px] items-center justify-center md:hidden">
+        <p class="text-md font-md">Thông tin thêm</p>
+       <button class="btn-show-footer">
+        <ion-icon  class="btn-icon-down w-10 h-10" name="caret-down-outline"></ion-icon>
+        <ion-icon class="hidden btn-icon-up w-10 h-10" name="caret-up-outline"></ion-icon>
+       </button>
+   </div>
    <!-- Footer -->
-   <div class="bg-current">
-       <div class="px-[30px] pt-11 text-white h-[100%] lg:h-96 lg:max-w-[1140px] mx-auto grid lg:grid-cols-4 gap-6">
-            <div>
-                <p class="text-lg font-bold">Về Runner Mobile</p>
-                <div class="mt-4">
-                    <span class="text-gray-500 text-sm">Với các giải pháp công nghệ tốt nhất, Haravan là tất cả những gì bạn cần để xây dựng thương hiệu online, thành công trong bán lẻ và marketing đột phá.</span>
-                </div>
+   <div class=" flex flex-col ">
+       <div class="order-2 copy-right">
+            <div class="border-t border-gray-400 h-[50px] bg-black flex justify-center items-center ">
+                <p class="text-white text-sm ">Copyright © 2022 Yala Style. Powered by Haravan</p>
             </div>
-            <div>
-                <p>.</p>
-                <div class="mt-4">
-                    <span class="text-gray-500 text-sm"><b>Địa chỉ:</b> Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh. <br>
-                     <span><b>Điện thoại:</b> 1900.636.099 <br></span>
-                     <span><b>Email:</b> hi@haravan.com</span>
-                </div>
-            </div>
-            <div>
-                <p class="text-lg font-bold">Hỗ trợ khách hàng</p>
-                <div  class="text-gray-500 text-sm mt-4">
-                    <li class="py-1">Tìm kiếm</li>
-                    <li class="py-1">Giới thiệu</li>
-                    <li class="py-1">Chính sách đổi trả</li>
-                    <li class="py-1">Chính sách bảo mật</li>
-                    <li class="py-1">Điều khoản dịch vụ</li>
-                </div>
-            </div>
-            <div>
-                <p class="text-lg font-bold">Chăm sóc khách hàng</p>
-                <div class="mt-4">
-                    <div class="flex">
-                        <ion-icon class="w-10 h-8" name="call-outline"></ion-icon>
-                        <div class="flex flex-col">
-                            <p class="ml-2 text-2xl">1900.636.099</p>
-                            <p class="ml-2 text-gray-500 text-md"> hi@haravan.com</p>
-                        </div>
-                        
-                        </div>
-                        
+        </div>
+       <div class="lg:h-[314px] pb-[50px] lg:pb-0 order-1 mobile-footer hidden md:block bg-current">
+           <div class="px-[30px] pt-11 text-white h-[100%] lg:h-90 lg:max-w-[1140px] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div>
+                    <div class="relative md:block">
+                        <p class="text-lg font-bold">Về Runner Mobile</p>
+                        <button class="btn-show-row-1">
+                            <ion-icon class="icon-down-row-1 absolute right-0 top-0 py-[5px] w-[20px] h-[20px] md:hidden" name="chevron-down-outline"></ion-icon>
+                            <ion-icon class="icon-up-row-1 hidden absolute right-0 top-0 py-[5px] w-[20px] h-[20px] md:hidden" name="chevron-up-outline"></ion-icon>
+                        </button>
                     </div>
-                    <div class="mt-4">
-                        <p class="text-lg font-bold mb-4">Follow Us</p>
-                        <ion-icon class="w-8 h-8" name="logo-facebook"></ion-icon>
-                        <ion-icon class="w-8 h-8" name="logo-instagram"></ion-icon>
-                        <ion-icon class="w-8 h-8" name="logo-google"></ion-icon>
-                        <ion-icon class="w-8 h-8" name="logo-youtube"></ion-icon>
+                    <div class="show-row-1 hidden  md:block">
+                        <span class="text-gray-500 text-sm">Với các giải pháp công nghệ tốt nhất, Haravan là tất cả những gì bạn cần để xây dựng thương hiệu online, thành công trong bán lẻ và marketing đột phá.</span>
                     </div>
                 </div>
-            </div>
+                <div class="show-row-1Bonus hidden md:block">
+                    <p class="text-black">.</p><br>
+                    <div class="">
+                        <span class="text-gray-500 text-sm"><b>Địa chỉ:</b> Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh. <br>
+                         <span><b>Điện thoại:</b> 1900.636.099 <br></span>
+                         <span><b>Email:</b> hi@haravan.com</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative lg:block">
+                        <p class="text-lg font-bold">Hỗ trợ khách hàng</p>
+                        <button class="btn-show-row-2">
+                            <ion-icon class="icon-down-row-2 absolute right-0 top-0 py-[5px] w-[20px] h-[20px] md:hidden" name="chevron-down-outline"></ion-icon>
+                            <ion-icon class="icon-up-row-2 hidden absolute right-0 top-0 py-[5px] w-[20px] h-[20px] md:hidden" name="chevron-up-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <div  class="show-row-2 hidden text-gray-500 text-sm md:block">
+                        <li class="py-1">Tìm kiếm</li>
+                        <li class="py-1">Giới thiệu</li>
+                        <li class="py-1">Chính sách đổi trả</li>
+                        <li class="py-1">Chính sách bảo mật</li>
+                        <li class="py-1">Điều khoản dịch vụ</li>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative lg:block">
+                        <p class="text-lg font-bold">Chăm sóc khách hàng</p>
+                        <button class="btn-show-row-3">
+                            <ion-icon class="icon-down-row-3 absolute right-0 top-0 py-[5px] w-[20px] h-[20px] md:hidden" name="chevron-down-outline"></ion-icon>
+                            <ion-icon class="icon-up-row-3 hidden absolute right-0 top-0 py-[5px] w-[20px] h-[20px] md:hidden" name="chevron-up-outline"></ion-icon>
+                        </button>
+                    </div>
+                 
+                    <div class="show-row-3 hidden  md:block">
+                        <div class="flex">
+                            <ion-icon class="w-10 h-8" name="call-outline"></ion-icon>
+                            <div class="flex flex-col">
+                                <p class="ml-2 text-2xl">1900.636.099</p>
+                                <p class="ml-2 text-gray-500 text-md"> hi@haravan.com</p>
+                            </div>
+                            
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-lg font-bold mb-4">Follow Us</p>
+                            <ion-icon class="w-8 h-8" name="logo-facebook"></ion-icon>
+                            <ion-icon class="w-8 h-8" name="logo-instagram"></ion-icon>
+                            <ion-icon class="w-8 h-8" name="logo-google"></ion-icon>
+                            <ion-icon class="w-8 h-8" name="logo-youtube"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+           </div>
        </div>
    </div>
+   <!-- Footer-Mobile -->
+  
+   
    <script>
-    const btn = document.querySelector("button.mobile-menu-button");
-    const menu = document.querySelector(".mobile-menu");
-    const closeIcon = document.querySelector(".close-icon")
-    const menuIcon = document.querySelector(".menu-icon");
-    const boxSearch = document.querySelector(".box-search");
-    const body =document.querySelector(".body");
-    var count = 0;
-    btn.addEventListener("click", () => {
-        count +=1;
-        menuIcon.classList.toggle("hidden");
-        menu.classList.toggle("hidden");
-        closeIcon.classList.toggle("hidden");
-        boxSearch.classList.toggle("hidden");
+       function mobileMenu() {
+           const btn = document.querySelector("button.mobile-menu-button");
+           const menu = document.querySelector(".mobile-menu");
+           const closeIcon = document.querySelector(".close-icon")
+           const menuIcon = document.querySelector(".menu-icon");
+           const boxSearch = document.querySelector(".box-search");
+           const body =document.querySelector(".body");
+           var count = 0;
+           btn.addEventListener("click", () => {
+               count +=1;
+               menuIcon.classList.toggle("hidden");
+               menu.classList.toggle("hidden");
+               closeIcon.classList.toggle("hidden");
+               boxSearch.classList.toggle("hidden");
+       
+               body.style.overflow ="hidden";
+               if(count%2 ==0) {
+                   body.style.overflow ="auto"
+               }
+           });
+       }
+       mobileMenu()
+       function showFooter(){
+           const btnShowFooter = document.querySelector(".btn-show-footer");
+           const footerMobile = document.querySelector(".mobile-footer");
+           const btnIconDown = document.querySelector('.btn-icon-down');
+           const btnIconUp = document.querySelector('.btn-icon-up');
+           const copyRight = document.querySelector('.copy-right');
+            btnShowFooter.addEventListener("click",() =>{
+               footerMobile.classList.toggle("hidden");
+               btnIconDown.classList.toggle("hidden");
+               btnIconUp.classList.toggle("hidden");
+               copyRight.style.bottom = '0';
+ 
+           })
+       }
+       showFooter()
 
-        body.style.overflow ="hidden";
-        if(count%2 ==0) {
-            body.style.overflow ="auto"
-        }
-    });
+       function showSubFooter() {
+            const btnShowSubFooter1 = document.querySelector(".btn-show-row-1");
+            const showSubFooter1 = document.querySelector(".show-row-1");
+            const showSubFooter1Bonus = document.querySelector(".show-row-1Bonus");
+            const iconDownSubFooter1 = document.querySelector('.icon-down-row-1');
+            const iconUpSubFooter1 = document.querySelector('.icon-up-row-1');
+
+            const btnShowSubFooter2 = document.querySelector(".btn-show-row-2");
+            const showSubFooter2 = document.querySelector(".show-row-2");
+            const iconDownSubFooter2 = document.querySelector('.icon-down-row-2');
+            const iconUpSubFooter2 = document.querySelector('.icon-up-row-2');
+
+            const btnShowSubFooter3 = document.querySelector(".btn-show-row-3");
+            const showSubFooter3 = document.querySelector(".show-row-3");
+            const iconDownSubFooter3 = document.querySelector('.icon-down-row-3');
+            const iconUpSubFooter3 = document.querySelector('.icon-up-row-3');
+
+            btnShowSubFooter1.addEventListener("click",() =>{
+                showSubFooter1.classList.toggle("hidden");
+                showSubFooter1Bonus.classList.toggle("hidden");
+                iconDownSubFooter1.classList.toggle('hidden');
+                iconUpSubFooter1.classList.toggle('hidden');
+
+
+            })
+            btnShowSubFooter2.addEventListener("click",()=> {
+                showSubFooter2.classList.toggle('hidden');
+                iconDownSubFooter2.classList.toggle('hidden');
+                iconUpSubFooter2.classList.toggle('hidden');
+            })
+            btnShowSubFooter3.addEventListener("click",()=> {
+                showSubFooter3.classList.toggle('hidden');
+                iconDownSubFooter3.classList.toggle('hidden');
+                iconUpSubFooter3.classList.toggle('hidden');
+            })
+       }
+       showSubFooter()
+
     </script>
 </body>
 </html>
