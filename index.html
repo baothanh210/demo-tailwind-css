@@ -54,8 +54,9 @@
     xl	1280px	@media (min-width: 1280px) { ... }
     2xl	1536px 	@media (min-width: 1536px) { ... }
  -->
-<body  >
-    <!-- banner-header -->
+<body>
+    <!-- Header -->
+    <div class="header-mobile lg:relative w-full z-20">
         <div class="bg-gray-300 flex justify-center">
             <div class=" md:flex mx-auto h-[60px] md:h-[45px] items-center ">
                 <p class=" text-md md:text-xs text-gray-800 font-medium">SALE hot chào lương về - Freeship đơn 0đ </p>
@@ -66,7 +67,7 @@
         </div>
         <!-- Navbar menu -->
         <div class=" lg:max-w-[1140px] mx-auto">
-            <div class="relative flex h-20 items-center justify-center " >
+            <div class="bg-white relative flex h-20 items-center justify-center " >
                 <button
                     class="lg:hidden outline-none mobile-menu-button">
                     <svg
@@ -109,7 +110,7 @@
             </div>
              <!-- Mobile menu -->
         
-             <div style="width:100vw; height: 100vh;" class="hidden bg-white w-full lg:w-0 text-xl z-10 mobile-menu">
+             <div style=" height: 100vh;" class="overflow-y-auto hidden bg-white w-full lg:w-0 text-xl z-10 mobile-menu">
                 <ul class="mobile-nav">
                     <li class="p-[10px] h-[60px] border " ><a class=" text-lg font-bold  " href="#">Trang chủ</a></li>
                     <li class="p-[10px] h-[60px] border " ><a class="text-lg font-bold" href="#">Header</a></li>
@@ -126,11 +127,13 @@
                 </ul>
             </div>
         </div>
-        <!-- Box search mobile -->
+    </div>
+    <!-- banner-header -->
+    <!-- Box search mobile -->
         <div class="box-search md:hidden my-3 h-[50px] flex">
             <input class="relative items-center mx-3 w-full border-2 rounded-md" type="text" placeholder="Tìm kiếm sản phẩm">
             <ion-icon class="absolute right-0 px-10 py-1 w-6 h-10 ml-2 " name="search-outline"></ion-icon>
-        </div>
+    </div>
    
   
     <!-- Slider -->
@@ -703,15 +706,21 @@
            const closeIcon = document.querySelector(".close-icon")
            const menuIcon = document.querySelector(".menu-icon");
            const boxSearch = document.querySelector(".box-search");
-           const body =document.querySelector(".body");
-           var count = 0;
+           const headerMobile =document.querySelector(".header-mobile");
+           
+           let count = 0;
            btn.addEventListener("click", () => {
                count +=1;
                menuIcon.classList.toggle("hidden");
                menu.classList.toggle("hidden");
                closeIcon.classList.toggle("hidden");
                boxSearch.classList.toggle("hidden");
-              
+               if (count %2 == 1) {
+                headerMobile.classList.toggle("fixed");
+               }
+               else if (count%2 == 0 ) {
+                headerMobile.classList.toggle("fixed");
+               }
            });
        }
        mobileMenu()
