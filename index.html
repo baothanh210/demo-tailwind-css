@@ -636,13 +636,13 @@
                             <ion-icon class="icon-up-row hidden absolute right-0 top-0 py-[5px] px-[10px] w-[20px] h-[20px] md:hidden" name="chevron-up-outline"></ion-icon>
                         </button>
                     </div>
-                    <div class="p-[20px] lg:p-0 show-row hidden  md:block">
+                    <div class="p-[20px] pb-0 md:p-0 show-row hidden  md:block">
                         <span class="text-gray-500 text-md lg:text-sm">Với các giải pháp công nghệ tốt nhất, Haravan là tất cả những gì bạn cần để xây dựng thương hiệu online, thành công trong bán lẻ và marketing đột phá.</span>
                     </div>
                 </div>
-                <div class="p-[20px] lg:p-0 show-row-1Bonus hidden md:block">
-                    <p class="text-black ">.</p><br>
-                    <div class="">
+                <div class="px-[20px] md:p-[20px] lg:p-0 show-row-1Bonus hidden md:block">
+                    <p class="hidden md:block text-black ">.</p><br>
+                    <div>
                         <span class="text-gray-500 text-sm"><b>Địa chỉ:</b> Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh. <br>
                          <span><b>Điện thoại:</b> 1900.636.099 <br></span>
                          <span><b>Email:</b> hi@haravan.com</span>
@@ -738,10 +738,16 @@
             const iconUpSubFooter = document.querySelectorAll('.icon-up-row');
             const showSubFooter1Bonus = document.querySelector(".show-row-1Bonus");
             for(let i=0; i<btnShowSubFooter.length ; i++) {
+            
                 btnShowSubFooter[i].addEventListener("click",() => {
+
                     showSubFooter[i].classList.toggle("hidden");
                     iconDownSubFooter[i].classList.toggle('hidden');
                     iconUpSubFooter[i].classList.toggle('hidden');
+                    console.log(btnShowSubFooter[i])
+                    if(i == 0) {
+                        showSubFooter1Bonus.classList.toggle('hidden');
+                    }
                 })  
             }
        }
